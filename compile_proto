@@ -1,0 +1,1 @@
+npx protoc --ts_out ./src/protos/. --proto_path protos protos/*.proto

@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+message HookScriptState {
+  string code = 1;
+  string transpiled_code = 2;
+  string json_context = 3;
+}
+
+message RegisterHookScriptRequest {
+  string code = 1;
+}
+
+message Ticket {
+  string date_string = 1;
+  string activity_name = 2;
+  string resource_id = 3;
+  float list_price = 4;
+  string ticket_id = 5;
+}
+
+message PriceOverride {
+  string date_string = 1;
+  string resource_id = 2;
+  float new_price = 3;
+}
+
+message AdditionalPriceResponse {
+  float amount = 1;
+}
+
+message ActivityPriceOverridePayload {
+  repeated Ticket tickets = 1;
+}
+
+message ActivityPriceOverrideResponse {
+  repeated PriceOverride overrides = 1;
+}

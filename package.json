@@ -1,0 +1,17 @@
+{
+  "name": "partner-hooks",
+  "module": "index.ts",
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@eigr/spawn-sdk": "^1.1.3"
+  }
+}
